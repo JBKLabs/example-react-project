@@ -1,3 +1,1 @@
-window.env = {
-  ENABLE_DEBUG_MODE: 'false',
-};
+window.env = { ENABLE_DEBUG_MODE: 'false' };

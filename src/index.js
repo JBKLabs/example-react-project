@@ -7,10 +7,11 @@ import '@babel/polyfill';
 import store from './lib/store';
 import App from './App';
 
-ReactDOM.render((
-  <Provider store={store}>
-    <Router>
-      <App />
-    </Router>
-  </Provider>
-), document.getElementById('root'));
+ReactDOM.render(
+	<Provider store={store}>
+		<Router>
+			<App />
+		</Router>
+	</Provider>,
+	document.getElementById('root')
+);
