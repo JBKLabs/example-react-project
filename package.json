@@ -14,8 +14,8 @@
   "author": "JBKLabs",
   "license": "MIT",
   "devDependencies": {
-    "@jbknowledge/dev": "0.0.7",
-    "@jbknowledge/eslint-config": "0.0.8"
+    "@jbknowledge/dev": "github:jbklabs/react-dev",
+    "@jbknowledge/eslint-config": "github:jbklabs/eslint-config"
   },
   "dependencies": {
     "@babel/polyfill": "7.6.0",
@@ -29,17 +29,5 @@
     "react-router": "^5.0.1",
     "react-router-dom": "5.0.1",
     "uuid": "3.3.3"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@jbknowledge"
-    ]
-  },
-  "prettier": {
-    "singleQuote": true,
-    "semi": true,
-    "tabWidth": 2,
-    "bracketSpacing": true,
-    "arrowParens": "always"
   }
 }

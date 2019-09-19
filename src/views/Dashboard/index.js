@@ -7,8 +7,8 @@ const Dashboard = () => (
   <>
     <h1>Example React App</h1>
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-    	<CurrentTime />
-    	<Users />
+      <CurrentTime />
+      <Users />
     </div>
   </>
 );
