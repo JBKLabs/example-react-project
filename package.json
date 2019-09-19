@@ -14,8 +14,8 @@
   "author": "JBKLabs",
   "license": "MIT",
   "devDependencies": {
-    "@jbknowledge/dev": "github:jbklabs/react-dev",
-    "@jbknowledge/eslint-config": "github:jbklabs/eslint-config"
+    "@jbknowledge/react-dev": "0.0.1",
+    "@jbknowledge/eslint-config": "0.0.9"
   },
   "dependencies": {
     "@babel/polyfill": "7.6.0",
