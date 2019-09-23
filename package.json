@@ -14,7 +14,7 @@
     "url": "https://github.com/JBKLabs/example-react-project.git"
   },
   "author": "JBKLabs",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@jbknowledge/eslint-config": "0.0.10",
     "@jbknowledge/react-dev": "0.0.1"
