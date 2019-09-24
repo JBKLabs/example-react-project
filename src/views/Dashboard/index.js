@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import CurrentTime from './CurrentTime';
 import Users from './Users';
@@ -6,11 +7,16 @@ import Users from './Users';
 const Dashboard = () => (
   <>
     <h1>Example React App</h1>
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <Container>
       <CurrentTime />
       <Users />
-    </div>
+    </Container>
   </>
 );
 
 export default Dashboard;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
