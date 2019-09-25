@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Form } from '@jbk/react-form';
 
-import { Input } from 'src/common';
+import { Input, Button } from 'src/common';
 
 const AddUser = ({ addUserAsync }) => (
   <Form
@@ -17,13 +17,15 @@ const AddUser = ({ addUserAsync }) => (
       name="firstName"
       regex="^(?!\s*$).+"
       defaultErrorMessage="First name required"
+      label="First Name"
     />
     <Input
       name="lastName"
       regex="^(?!\s*$).+"
       defaultErrorMessage="Last name required"
+      label="Last Name"
     />
-    <button type="submit">Submit</button>
+    <Button type="submit">Add User</Button>
   </Form>
 );
 
