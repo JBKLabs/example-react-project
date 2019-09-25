@@ -1,6 +1,6 @@
 {
-    "short_name": "example",
-    "name": "example",
+    "short_name": "<% projectName %>",
+    "name": "<% projectName %>",
     "icons": [
         {
             "src": "favicon.ico",

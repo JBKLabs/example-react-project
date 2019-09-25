@@ -1,7 +1,7 @@
 {
-  "name": "example",
+  "name": "<% projectName %>",
   "version": "0.1.0",
-  "description": "An example react project",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "start": "jbk-scripts start",
@@ -9,15 +9,9 @@
     "build": "jbk-scripts build",
     "configure": "jbk-scripts configure"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JBKLabs/example-react-project.git"
-  },
-  "author": "JBKLabs",
-  "license": "Apache-2.0",
   "devDependencies": {
     "@jbknowledge/eslint-config": "0.0.10",
-    "@jbknowledge/react-dev": "0.0.1"
+    "@jbknowledge/react-dev": "github:jbklabs/react-dev"
   },
   "dependencies": {
     "@babel/polyfill": "7.6.0",
