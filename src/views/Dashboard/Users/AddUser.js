@@ -7,9 +7,10 @@ import { Input, Button } from 'src/common';
 
 const AddUser = ({ addUserAsync }) => (
   <Form
-    onSubmit={({ formValid, values: user }) => {
+    onSubmit={({ formValid, values: user, resetInputs }) => {
       if (formValid) {
         addUserAsync(user);
+        resetInputs();
       }
     }}
   >
