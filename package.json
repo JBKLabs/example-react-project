@@ -10,12 +10,12 @@
     "configure": "jbk-scripts configure"
   },
   "devDependencies": {
-    "@jbknowledge/eslint-config": "0.0.10",
-    "@jbknowledge/react-dev": "github:jbklabs/react-dev"
+    "@jbknowledge/eslint-config": "0.1.0",
+    "@jbknowledge/react-dev": "0.1.0"
   },
   "dependencies": {
     "@babel/polyfill": "7.6.0",
-    "@jbk/react-form": "github:mauleb/react-form",
+    "@jbk/react-form": "github:jbklabs/react-form",
     "@rematch/core": "1.2.0",
     "moment": "2.24.0",
     "prop-types": "15.7.2",
