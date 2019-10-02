@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "7.6.0",
-    "@jbk/react-form": "github:jbklabs/react-form",
+    "@jbknowledge/react-form": "0.2.0",
     "@rematch/core": "1.2.0",
     "moment": "2.24.0",
     "prop-types": "15.7.2",

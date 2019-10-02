@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Form } from '@jbk/react-form';
+import { Form } from '@jbknowledge/react-form';
 
 import { Input, Button } from 'src/common';
 
