@@ -5,13 +5,13 @@ This project was generated using [`@jbknowledge/create-react-app`](https://www.n
 ## Running Locally
 
 - Clone this repository
-- `npm i`
-- `npm start`
+- `yarn install`
+- `yarn start`
 - Navigate to `localhost:8080` in your web browser
 
 ## Building
 
-This project can be built using `npm run build` which will generate a static website in `dist/*`
+This project can be built using `yarn build` which will generate a static website in `dist/*`
 
 ## Deployment
 
@@ -30,7 +30,7 @@ window.env = {
 
 These values can be accessed anywhere in the project.
 
-Each value in `env.js` can be overridden programmatically per environment via `npm run configure`. The `configure` script provided by `@jbknowledge/react-dev` will replace each key value in `window.env` with the value of `ENV_<key>` if it exists. For example, if you have the following `env.js` file:
+Each value in `env.js` can be overridden programmatically per environment via `yarn configure`. The `configure` script provided by `@jbknowledge/react-dev` will replace each key value in `window.env` with the value of `ENV_<key>` if it exists. For example, if you have the following `env.js` file:
 
 ```js
 window.env = {
@@ -38,7 +38,7 @@ window.env = {
 };
 ```
 
-And you run `npm run configure` while having the environment variable `ENV_SOME_ARG` set to `production value`. Your `env.js` file will be updated to:
+And you run `yarn configure` while having the environment variable `ENV_SOME_ARG` set to `production value`. Your `env.js` file will be updated to:
 
 ```js
 window.env = {
