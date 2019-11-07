@@ -1,7 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Form } from '@jbknowledge/react-form';
+import { withModelEffects } from '@jbknowledge/react-models';
 
 import { Input, Button } from 'src/common';
 
@@ -30,11 +30,14 @@ const AddUser = ({ addUserAsync }) => (
   </Form>
 );
 
-const mapDispatch = ({ users: { addUserAsync } }) => ({ addUserAsync });
+const mapEffects = ({
+  users: { addUserAsync }
+}) => ({
+  addUserAsync
+});
 
-AddUser.propTypes = { addUserAsync: PropTypes.func };
+export default withModelEffects(mapEffects)(AddUser);
 
-export default connect(
-  null,
-  mapDispatch
-)(AddUser);
+AddUser.propTypes = {
+  addUserAsync: PropTypes.func,
+};
