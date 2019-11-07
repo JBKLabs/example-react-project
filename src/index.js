@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ModelProvider } from '@jbknowledge/react-models';
 import '@babel/polyfill';
 
-import store from './lib/store';
 import App from './App';
 
 ReactDOM.render(
-  <Provider store={store}>
+  <ModelProvider>
     <Router>
       <App />
     </Router>
-  </Provider>,
+  </ModelProvider>,
   document.getElementById('root')
 );

@@ -1,29 +1,27 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import { useUsers } from 'src/models';
 
-const UserList = ({ users }) => (
-  <div>
-    <ul style={{ listStyle: 'none', paddingInlineStart: 0 }}>
-      {users.map((user) => (
-        <li key={user.id}>
-          {user.firstName} {user.lastName}
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+const sortItems = (all) =>
+  all.sort((userA, userB) => {
+    if (userA.firstName !== userB.firstName) {
+      return userA.firstName > userB.firstName ? 1 : -1;
+    }
+    return userA.lastName > userB.lastName ? 1 : -1;
+  });
 
-UserList.propTypes = {
-  users: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      firstName: PropTypes.string,
-      lastName: PropTypes.string
-    })
-  )
+const UserList = () => {
+  const users = useUsers(sortItems);
+  return (
+    <div>
+      <ul style={{ listStyle: 'none', paddingInlineStart: 0 }}>
+        {users.map((user) => (
+          <li key={user.id}>
+            {user.firstName} {user.lastName}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
-const mapState = (state) => ({ users: state.users });
-
-export default connect(mapState)(UserList);
+export default UserList;

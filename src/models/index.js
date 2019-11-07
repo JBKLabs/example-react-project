@@ -1,3 +1,4 @@
+import { buildModel } from '@jbknowledge/react-models';
 import users from './users';
 
-export default { users };
+export const useUsers = buildModel(users);
