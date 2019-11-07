@@ -1,21 +1,20 @@
 import uuid from 'uuid/v1';
 
 export default {
-  state: [],
+  name: 'users',
+  state: { 0: { id: uuid(), firstName: 'John', lastName: 'Doe' } },
   reducers: {
-    add: (state, user) => [
+    setUser: (state, user) => ({
       ...state,
-      {
-        id: uuid(),
-        firstName: user.firstName,
-        lastName: user.lastName
-      }
-    ]
+      [user.id]: user
+    })
   },
   effects: (dispatch) => ({
-    async addUserAsync(user) {
-      await new Promise((resolve) => setTimeout(resolve, 500));
-      dispatch.users.add(user);
+    addUserAsync: async (user) => {
+      dispatch.users.setUser({
+        id: uuid(),
+        ...user
+      });
     }
   })
 };
