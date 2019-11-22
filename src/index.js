@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ModelProvider } from '@jbknowledge/react-models';
-import '@babel/polyfill';
+import 'core-js/stable';
 
 import App from './App';
 
