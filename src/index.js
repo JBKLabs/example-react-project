@@ -5,6 +5,7 @@ import { ModelProvider } from '@jbknowledge/react-models';
 import 'core-js/stable';
 
 import App from './App';
+import './styles/index.scss';
 
 ReactDOM.render(
   <ModelProvider>
